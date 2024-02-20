@@ -25,6 +25,7 @@ body p {
 
 body a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 header {
@@ -45,6 +46,7 @@ header {
 
 .header-icon svg:hover {
     fill: #9a9a9a;
+    cursor: pointer;
 }
 
 .header-nav {
@@ -92,7 +94,7 @@ footer {
     align-self: flex-end;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1124px) {
     body {
         padding: 10px; /* Añade relleno al cuerpo en dispositivos pequeños */
         grid-template-columns: 20% auto 20%;
