@@ -1,101 +1,103 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #040319; /* Fondo oscuro */
-    color: #fff; /* Texto blanco */
+    background-color: #040319;
+    color: #fff;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif, serif;
-    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-body p {
-    font-weight: 100;
-    font-size: 1.1rem;
-}
-
-body a {
+a {
     text-decoration: none;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
 }
 
-body a:hover {
+p {
+    font-weight: 100;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+a:hover {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+header, main, footer {
+    width: 40%;
+    margin: 0 auto;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8vh;
-    width: 50vw;
-    border-bottom: #fff;
     border-bottom: 1px solid #292930;
-}
-
-.header-icon svg {
-    width: 2em;
-    height: 2em;
-    vertical-align: -0.125em;
-    fill: #fff;
-}
-
-.header-icon svg:hover {
-    fill: #9a9a9a;
+    padding: 10px 20px;
 }
 
 .header-nav {
     display: flex;
-    width: 30vh;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav a {
+    margin-right: 20px;
+}
+
+.mobile-menu-icon {
+    display: none;
 }
 
 main {
-    height: 80vh;
-    width: 50vw;
+    padding: 20px;
 }
 
 .main-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10vh;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-hero h1 {
+    margin-bottom: 10px;
+}
+
+.main-hero p {
+    margin-bottom: 20px;
+}
+
+.main-hero-img {
+    width: 65%;
+    border-radius: 50%;
 }
 
 .main-posts article {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #292930;
+    padding: 10px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-    body {
-        padding: 10px; /* Añade relleno al cuerpo en dispositivos pequeños */
+    header, main, footer {
+        width: 90%;
     }
 
-    header, main {
-        width: 90vw;
+    .header-nav {
+        display: none;
     }
 
-    .main-hero {
-        margin: 1vh;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    body {
-        padding: 10px; /* Añade relleno al cuerpo en dispositivos pequeños */
+    .mobile-menu-icon {
+        display: block;
     }
 
-    header, main {
-        width: 85vw;
-    }
-
-    .main-hero {
-        margin: 1vh;
+    .main-hero-img {
+        width: 50%;
     }
 }
