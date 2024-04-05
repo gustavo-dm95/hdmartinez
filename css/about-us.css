@@ -23,7 +23,7 @@ a:hover {
 }
 
 header, main, footer {
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
 }
 
@@ -53,6 +53,15 @@ main {
     padding: 20px;
 }
 
+.main-hero {
+    text-align: center;
+    margin: 50px;
+}
+
+.main-hero h1 {
+    font-size: 35px;
+}
+
 .about-us-section {
     display: block;
     flex-wrap: wrap;
@@ -68,7 +77,8 @@ main {
 }
 
 .about-image {
-    width: 30%;
+    height: 25%;
+    width: 25%;
     border-radius: 50%;
     margin-bottom: 10px;
 }

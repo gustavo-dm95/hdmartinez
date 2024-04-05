@@ -55,15 +55,11 @@ main {
 
 .main-hero {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 50px;
 }
 
 .main-hero h1 {
-    margin-bottom: 10px;
-}
-
-.main-hero p {
-    margin-bottom: 20px;
+    font-size: 35px;
 }
 
 .main-hero-img {
