@@ -50,6 +50,9 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
     padding: 20px;
 }
 
@@ -79,9 +82,7 @@ main {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    margin-top: 15vh;
 }
 
 @media only screen and (max-width: 768px) {
